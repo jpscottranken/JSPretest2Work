@@ -1,0 +1,110 @@
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Short 2-1 Modify the Test Scores application
+============================================
+In this exercise, you'll modify the Test Scores application so it provides for four test scores and 
+displays the results in a dialog box like the one that follows. Estimated time: 10 to 20 minutes.
+
+1.	Open the application in this folder: exercises_short\ch02\test_scores
+
+2.	Run the application, and note that it works like the one in the book and that it writes the results 
+	to the browser page. Then, review the code in the JavaScript file, and note that it's slightly different 
+	than the code in the book, although it gets the same results.
+	
+3.	Modify the application so it provides for a fourth test score.
+
+4.	Modify the application so it displays the results in a dialog box like the one above, as well as in 
+	the browser page after the dialog box is closed.
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Short 3-1 Enhance the Future Value application
+==============================================
+In this exercise, you’ll make a quick enhancement that shows not only the future value when interest 
+is compounded yearly, but also when it’s compounded monthly.
+
+Estimated time: 15 to 20 minutes.
+
+1.	Open application in this folder: exercises_short\ch03\future_value
+
+2.	Run the application to make sure it works correctly.
+
+3.	Review its code. Note that it is just like the code in the book and that the interest is 
+	calculated each year.
+	
+4.	Add the code for calculating the future value when interest is calculated each month. Then, add the 
+	code for displaying the results, as shown above. Be sure to add the heading that identifies each 
+	result.
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Short 4-1 Enhance the MPG application
+=====================================
+In this exercise, you'll make a couple of quick enhancements to the Miles Per Gallon application, 
+like clearing the two entries if the user double-clicks in the Miles Per Gallon text box.
+
+Estimated time: 10 to 15 minutes.
+
+1.	Open the application in this folder: exercises_short\ch04\mpg
+
+2.	Run the application to see that it works just like the one in the book. Then, in the JavaScript 
+	file, note that there’s a clearEntries() function that isn't used.
+	
+3.	Enhance the application so the entries are cleared when the user double-clicks in the Miles Per 
+	Gallon text box. (Incidentally, this won’t work if the text box is disabled.)
+	
+4.	Enhance the application so the Miles Driven text box is cleared when it receives the focus. Then, 
+	do the same for the Gallons of Gas Used text box.
+	
+5.	Enhance the application so the calculation is done when the focus leaves the Gallons of Gas Used 
+	text box. To do the calculation, you just need to run the processEntries() function when that event 
+	occurs.
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Short 4-2 Use arrow functions with the Test Scores application
+==============================================================
+In this exercise, you’ll modify a version of the Test Scores application so it uses arrow functions 
+instead of function expressions. This version displays the average score after each score is entered 
+as shown below. You'll also use an anonymous function for the DOMContentLoaded event handler. 
+
+Estimated time: 10 to 15 minutes.
+
+1.	Open the application in this folder: exercises_short\ch04\test_scores
+
+2.	Run the application and add two or more scores to see that the new average is displayed each time 
+	another score is added.
+	
+3.	Review the code in the JavaScript file and note that all of the functions are written as function 
+	expressions.
+	
+4.	Modify the $(), addScore(), and calculateAverage() functions so they use arrow functions instead 
+	of function expressions.
+	
+5.	Modify the document.addEventListener() method so it uses an anonymous function for the event handler 
+	instead of the processDOM() function.
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Short 5-1 Debug the MPG application
+===================================
+This exercise gives you a chance to use your debugging skills to find the cause of an error. 
+
+Estimated time: 5 to 15 minutes.
+
+1.	Open the application in this folder: exercises_short\ch05\mpg
+
+2.	Start the application, enter the values shown above, and click on the Calculate MPG button. 
+	Nothing happens.
+	
+3.	Use Chrome's developer tools to find the cause or causes of the problem. Then, use your IDE or 
+	text editor to fix the code.
+	
+4.	Start the application again, enter the values shown above, and click on the Calculate MPG button. 
+	This time, 27 will be displayed in the Miles Per Gallon text box.
+	
+5.	Fix the application so the miles per gallon will be displayed with one decimal place.
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
