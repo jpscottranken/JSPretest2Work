@@ -30,7 +30,6 @@ the Make Change button. Then, test this application.
 const $ = (selector) => document.querySelector(selector);
 
 const makeChange = (cents) => {
-  alert("In makeChange() function!");
   const quarters = parseInt(cents / 25);
   cents %= 25;
 
@@ -38,7 +37,7 @@ const makeChange = (cents) => {
   cents %= 10;
 
   const nickels = parseInt(cents / 5);
-  pennies = cents % 5;
+  const pennies = cents % 5;
 
   //  Display the number of quarters, the number of
   //  dimes, the number of nickels, and the number
@@ -65,7 +64,8 @@ const processEntry = () => {
 //  Set up the eventListener
 document.addEventListener("DOMContentLoaded", () => {
   //  Add eventListener
-  $("#calculate").onclick = processEntry();
+    $("#calculate").addEventListener("click", processEntry);
+
 
   $("#cents").focus();
 });
