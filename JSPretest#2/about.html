@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>About Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!--	Begin <header> section	-->
+      <nav>
+        <div class="navigation-bar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="bmi.html">BMI</a></li>
+            <li><a href="game.html">Game</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--	End   <header> section	-->
+
+    <main class="bmi">
+      <h1 class="bmiHeader">Guessing Game Rules</h1>
+      <div id="guessingGameText">
+        <p>
+          This is a simple guessing game. First, a random number between 1 and
+          100 is generated. This number is the number the user is supposed to
+          guess.
+        </p>
+        <p>
+          The person playing the game enters a number between 1 and 100 in the
+          associated textbox. If s/he enters no input, non-numeric input, a
+          guess less than 1, or a guess greater than 100, they are given an
+          associated error message. The guess is not counted. The guess textbox
+          is cleared and the focus is put on this textbox.
+        </p>
+        <p>
+          If the user enters a valid guess between 1 and 100 that is too low
+          (less than the random number), they are given an appropriate message
+          that tells them the guess was too low. The number of guesses is also
+          incremented.
+        </p>
+        <p>
+          If the user enters a valid guess between 1 and 100 that is too high
+          (greater than the random number), they are given an appropriate
+          message that tells them the guess was too high. The number of guesses
+          is also incremented.
+        </p>
+        <p>
+          If the user enters a valid guess between 1 and 100 that is correct
+          (equals the random number), they are given an appropriate message that
+          tells them that there guess is correct. They are also shown the total
+          number of guesses made.
+        </p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div>&copy; 2023 Ranken Technical College - AWD Program</div>
+    </footer>
+
+    <script type="text/javascript" src="js/bmi.js"></script>
+  </body>
+</html>

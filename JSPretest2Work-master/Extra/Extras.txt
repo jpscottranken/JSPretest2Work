@@ -1,0 +1,191 @@
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Extra 2-1 Convert Fahrenheit to Celsius
+=======================================
+In this exercise, you'll create an application that converts Fahrenheit temperatures
+to Celsius temperatures by using the prompt() method of the window object and the 
+write() method of the document object.
+
+To convert Fahrenheit to Celsius, first subtract 32 from the Fahrenheit temperature. 
+Then, multiply that result by 5/9.
+
+1. 	Open this file: exercises_extra\ch02\convert_temps.html
+
+2. 	Review the script element at the end of the body section and note that it's empty. 
+	You'll write the code for this application within this element.
+	
+3.	Develop this application. Allow the user to enter decimal numbers, and display the 
+	Fahrenheit value entered by the user and the calculated Celsius value rounded to 1 digit.
+	
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Extra 3-1 Enhance the Fahrenheit to Celsius application
+=======================================================
+In this exercise, you’ll add data validation to the application you created in extra exercise
+2-1. You'll also let the user do multiple conversions before ending the application. This is the 
+dialog box for an invalid entry:
+
+1.	If you didn't already do extra exercise 2-1, do it now. Then, copy the convert_temps.html file 
+	into this folder: exercises_extra\ch03\
+	
+2.	Add data validation to the application so it won't do the conversion until the user enters a 
+	Fahrenheit temperature between -100 and 212. If the entry is invalid, a dialog box like the one 
+	above should be displayed.
+	
+3.	Add a loop to the code so the user can do a series of calculations without restarting the 
+	application. To end the application, the user must enter 999 as the temperature.
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Extra 3-2 Convert number grades to letter grades
+================================================
+In this exercise, you’ll add data validation to the application you created in extra 
+exercise 2-1. You'll also let the user do multiple conversions before ending the application. 
+This is the dialog box for an invalid entry:
+
+1.	If you didn’t already do extra exercise 2-1, do it now. Then, copy the convert_temps.html 
+	file into this folder: exercises_extra\ch03\
+	
+2. 	Add data validation to the application so it won't do the conversion until the user enters 
+	a Fahrenheit temperature between -100 and 212. If the entry is invalid, a dialog box like 
+	the one above should be displayed.
+	
+3.	Add a loop to the code so the user can do a series of calculations without restarting the 
+	application. To end the application, the user must enter 999 as the temperature.
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Extra 3-3 Create a Sum of Numbers application
+=============================================
+This application will give you a chance to use a for loop. It asks the user to enter a number 
+from 1 through 100 with this prompt dialog box:
+
+Finally, it adds all the numbers from each of the user’s entries and displays the sum of the 
+numbers in the page like this:
+
+1.	Open this HTML file: exercises_extra\ch03\sum_numbers.html
+
+2. 	In the script element, add a do-while loop that prompts the user for an entry from 1 through 100. 
+	If the entry is invalid, display an alert box with this message: "Please enter a number between 1 
+	and 100". Then, continue the loop until the entry is valid.
+	
+3. 	After the do-while loop, code a for loop that sums the numbers, and then display the second dialog 
+	box above. For instance, the sum for an entry of 4 is 1 + 2 + 3 + 4.
+	
+4. 	Add a do-while loop around all of the code that uses the second dialog box above to determine whether
+	the first dialog box should be displayed again so the user can enter another number. The application 
+	should end for any entry other than "y".
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Extra 3-4 Use a Sales array
+===========================
+In this exercise, you'll start with five arrays that represent sales regions, and each array contains four
+values that represent the quarterly sales for the region. Then, you'll summarize the data in the page.
+
+1.	Open the application in this folder: exercises_extra\ch03\sales_array\
+
+2. 	In the HTML file, note the link element that refers to the CSS file, and the script element refers to 
+	the JavaScript file.
+	
+3. 	In the JavaScript file, note that five arrays are declared with four values in each. Each of these arrays 
+	represents one sales region, and each of the values in an array represents one sales quarter. For instance, 
+	the sales for the third quarter in region 3 were 2710.
+	
+4.	Write the code for summing the quarterly sales for each the five regions and displaying them on the page 
+	with the document.write() method. To do that, use an <h2> tag for each header and a <br> tag for a line break 
+	at the end of each line of sales data.
+	
+5.	Write the code for getting and displaying the regional sales data.
+
+6.	Write the code for getting and displaying the total sales data.
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Extra 4-1 Develop the Sales Tax Calculator
+===========================================
+In this exercise, you’ll develop an application that calculates the sales tax and invoice total after the user 
+enters the subtotal and tax rate.
+
+1.	Open the application in this folder: exercises_extra\ch04\sales_tax\
+	Then, run the application to see the user interface shown above, although that interface won't do anything 
+	until you develop the JavaScript for it.
+	
+2.	In the JavaScript file, note that the $() function has been coded for you. It gets the object for the HTML 
+	element that’s specified by the CSS selector.
+	
+3.	Code an event handler function named processEntries() that gets the user entries, calculates the sales tax 
+	and total, and displays those results in the text boxes.
+	
+4.	Code a DOMContentLoaded event handler that attaches the processEntries() function to the click event of the 
+	Calculate button. Then, test what you have so far.
+	
+5.	Add data validation to the processEntries() function. The subtotal entry should be a valid, positive number 
+	that's less than 10,000. The tax rate should be a valid, positive number that’s less than 12. The error messages 
+	should be displayed in alert dialog boxes, and the error messages should be:
+	
+	Subtotal must be > 0 and < 10000 Tax Rate must be > 0 and < 12
+	
+6.	Add JavaScript that moves the cursor to the Subtotal field when the application starts and when the user clicks 
+	on the Calculate button.
+	
+7.	Add the event handler for the click event of the Clear button. This event handler should clear all text boxes 
+	and move the cursor to the Subtotal field.
+	
+8.	Add event handlers for the click events of the Subtotal and Tax Rate text boxes. Each handler should clear the 
+	data from the text box. Update the event handler for the Clear button to call these functions as well (to reduce 
+	code duplication).
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Extra 4-2 Develop the Change Calculator
+=======================================
+In this exercise, you’ll develop an application that tells how many quarters, dimes, nickels, and pennies are 
+needed to make change for any amount of change from 0 through 99 cents. One way to get the results is to use the 
+divide and modulus operators along with the parseInt() method for truncating the results so they are whole numbers.
+
+1.	Open the application in this folder: exercises_extra\ch04\change_maker\
+	Then, run the application to see the user interface shown above, although that interface won't do anything 
+	until you develop the JavaScript for it.
+	
+2.	In the JavaScript file, note that the $() function has already been coded.
+
+3.	Code an event handler named processEntry() that gets the user's entry and checks to make sure that it is a 
+	number between 0 and 99. If so, call a function named makeChange() and pass it the user's entry. Otherwise, 
+	display an alert dialog box for the error.
+	
+4.	Code the makeChange() function, which should have one parameter that accepts the user's entry. This function 
+	shouldn't return anything, but it should display the results in the text boxes for Quarters, Dimes, Nickels, 
+	and Pennies.
+	
+5.	Code a DOMContentLoaded event handler that attaches the processEntry() event handler to the click event of 
+	the Make Change button. Then, test this application.
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Extra 4-3 Develop the Income Tax Calculator
+===========================================
+In this exercise, you'll use nested if statements and arithmetic expressions to calculate the federal income tax 
+that is owed for a taxable income amount.
+
+This is the 2020 table for the federal income tax on individuals that you should use for calculating the tax:
+
+1.	Open the application in this folder: exercises_extra\ch04\income_tax\
+	Note that the JavaScript file has some starting JavaScript code for this application, including the $() function 
+	and a DOMContentLoaded event handler that attaches a function named processEntry() to the click event of the 
+	Calculate button and moves the focus to the first text box.
+	
+2.	Code the processEntry() function. It should get the user’s entry and make sure it's a valid number greater than 
+	zero. If it isn’t valid, it should display an error message. If it is valid, it should pass the value to a 
+	function named calculateTax(), which should return the tax amount. That amount should then be displayed in the
+	second text box. The focus should be moved to the first text box whether or not the entry is valid.
+	
+3.	Code the calculateTax() function. To start, just write the code for calculating the tax for any amount within 
+	the first two brackets in the table above. The user’s entry should be converted to an integer, and the tax 
+	should be rounded to two decimal places. To test this, use income values of 9875 and 40125, which should display 
+	taxable amounts of 987.50 and 4,617.50.
+	
+4.	Add the JavaScript code for the next tax bracket. Then, if you have the time, add the JavaScript code for the 
+	remaining tax brackets.
+
+//////////////////////////////////////////////////////////////////////////////////////////////
